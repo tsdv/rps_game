@@ -1,0 +1,10 @@
+$("#modal-wins").find(".modal-content").html("<%= j(render 'games/modal_wins') %>");
+$('#curb-choose').attr('src', "<%=j(image_path("#{@result[:curb_bet]}.svg"))%>")
+$('#modal-waiting').on('hidden.bs.modal', function () {
+  $('#modal-wait').html("<%=j(render('games/modals_waiting')) %>")
+})
+setTimeout(function() {
+  $('.modal').modal('hide');
+  $('#modal-wins').modal();
+}, 1000);
+

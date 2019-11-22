@@ -1,0 +1,19 @@
+#modal-waiting.modal.fade aria-hidden="true" aria-labelledby="exampleModalLabel" role="dialog" tabindex="-1"
+  .modal-dialog role="document"
+    .modal-content
+      .modal-header.unset-border
+        h5.col-12#modal-winsLabel.modal-title.text-center.game-title
+          | WAITING CURB'S CHOOSE
+          button.close aria-label="Close" data-dismiss="modal" type="button"
+            span aria-hidden="true"  &times;
+      .modal-body.game-process
+        .row
+          .col.user-bet
+            figure.image-pet
+              = image_tag('rock.svg', id: 'user-choose', class: 'rounded float-left')
+              figcaption.span.caption Your bet
+          .col.curb-choose
+            figure.image-pet
+              = image_tag('30.svg', id: 'curb-choose', class: 'rounded float-left')
+              figcaption.curb-logo
+                = image_tag('curb_logo.png')

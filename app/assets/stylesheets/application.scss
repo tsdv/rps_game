@@ -1,0 +1,118 @@
+
+@import "bootstrap";
+
+.bet {
+  width: 24px;
+  top: 467px;
+  left: 306px;
+  height: 27px;
+  background: #F8F8F8 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  opacity: 1;
+}
+.game {
+  column-count: 3;
+  height: 139px;
+  width: 139px;
+  margin-left: 40%;
+}
+
+.bets-choose{
+  height: 273px;
+  cursor: pointer;
+}
+
+.game-process{
+  column-count: 2;
+}
+.image-pet {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 120px;
+}
+
+.image-pet img {
+  width: 100px;
+  height: 100px;
+}
+
+.caption {
+  display: block;
+}
+
+.header-title {
+  color: #36006C;
+  size: 50px;
+  text-align: center;
+  font-size: 4.61rem;
+}
+
+.description {
+  opacity: 54%;
+
+}
+figcaption {
+  color: #36006C;
+}
+
+.image-winner {
+  position: relative;
+  height: 164px;
+}
+
+.image-winner img {
+  width: 70px;
+  height: 164px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.curb-choose {
+  position: relative;
+  margin-left: 70px;
+}
+
+.loader {
+  position: relative;
+  top: 40px;
+}
+
+.curb-logo {
+  //position: relative;
+  top: 45px;
+}
+
+.user-bet {
+  margin-left: 30px;
+}
+
+.unset-border {
+  border: unset;
+}
+
+.curb-logo img {
+  width: 50px;
+  height: 100%;
+}
+
+.game-button {
+  background-color: #36006C;
+  width: 100%;
+}
+
+.winner-modal {
+  width: 300px;
+}
+
+
+.game-title {
+  color: #36006C;
+}
