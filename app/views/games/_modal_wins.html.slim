@@ -1,0 +1,11 @@
+.modal-header.unset-border
+  h5.col-12#modal-winsLabel.modal-title.text-center.game-title
+    | #{game_winner @result[:winner]}
+    button.close aria-label="Close" data-dismiss="modal" type="button"
+      span aria-hidden="true"  &times;
+.modal-body
+  p.text-center = game_result(@result)
+  .image-winner
+    = image_tag("#{@result[:winner_bet]}.svg")
+.modal-footer.unset-border
+  button.btn.btn-primary.game-button aria-label="Close" data-dismiss="modal" type="button" Ok
