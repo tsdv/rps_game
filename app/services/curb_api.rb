@@ -15,6 +15,8 @@ module CurbApi
         generate_bet
       rescue Errno::ECONNREFUSED
         generate_bet
+      rescue SocketError
+        generate_bet
       end
     end
 
