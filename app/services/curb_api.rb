@@ -13,9 +13,7 @@ module CurbApi
       rescue RestClient::ExceptionWithResponse => e
         api_logger.error(e.response)
         generate_bet
-      rescue Errno::ECONNREFUSED
-        generate_bet
-      rescue SocketError
+      rescue Errno::ECONNREFUSED, SocketError
         generate_bet
       end
     end

@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://5eddt4q9dk.execute-api.us-east-1.amazonaws.com/rps-stage/throw
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin18.7.0 x86_64) ruby/2.6.3p62
+      Host:
+      - 5eddt4q9dk.execute-api.us-east-1.amazonaws.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 26 Nov 2019 11:09:00 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '73'
+      Connection:
+      - keep-alive
+      X-Amzn-Requestid:
+      - dd117d17-4051-4b60-9582-82b9b28438c3
+      X-Amz-Apigw-Id:
+      - Dw4oBHisoAMFSRw=
+      X-Amzn-Trace-Id:
+      - Root=1-5ddd07cc-483a3dc038f78e60319f7880;Sampled=0
+    body:
+      encoding: UTF-8
+      string: '{"statusCode":500,"body":"Something went wrong. Please try again later."}'
+    http_version: 
+  recorded_at: Tue, 26 Nov 2019 11:09:00 GMT
+recorded_with: VCR 5.0.0
